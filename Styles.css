@@ -1,0 +1,919 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    /*background-image: linear-gradient(to bottom,rgba(248, 248, 139, 0.616),rgba(255, 166, 0, 0.616));*/
+    position: relative;
+    z-index: 1;
+
+}
+
+.navbar {
+    margin: 3px auto;
+
+    position: fixed;
+    background-color:#F32020;
+    opacity: 0.95;
+    width: 100%;
+    height: 80px;
+    z-index: 4;   
+}
+
+.navlogo {
+    float: left;
+}
+
+.navlogo1 {
+    height: 50px;
+    margin: 15px 0 0 30px;
+}
+
+.navlogo2 {
+    height: 50px;
+}
+
+.navoptions {
+    float: left;
+    position: absolute;
+    left: 550px;
+    top: 27px;
+    border-left: 1px white solid;
+}
+
+.navoptions ul{
+    border-left: 1px white solid;
+}
+
+.navoptions li{
+    list-style: none;
+    font-weight: bold;
+    font-size: 20px;
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px white solid;
+}
+
+.maincover {
+    width: 55%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),url(../Images/cover.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0 0 0 30px;
+}
+.header {
+    height: 100vh;
+    background-image: linear-gradient(to bottom,rgba(255, 217, 0, 0.185),rgba(253, 222, 193, 0.486));
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+
+.logobox {
+    position: absolute;
+    float: left;
+    top: 100px;
+    left: 50px;
+}
+
+.logo1 {
+    height: 100px;
+}
+
+
+.logo2 {
+    height: 100px;
+    margin-left: -20px;
+}
+
+
+.welcome-box {
+    position: absolute;
+    top: 370px;
+    left: 79%;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+    margin-bottom: 60px;
+    
+    
+}
+/*
+.welcome {
+    text-align: center;
+    display: block;
+    line-height: 4;
+    color: orange;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 3px;/*
+    animation-name: popdown ;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    text-shadow: 0 3px 4px hsla(0, 0%, 0%, 0.815);
+ 
+}*/
+
+.heading-p {
+    
+    color: orange;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+
+.main-name {
+    height: 250px;
+}
+/*
+.heading-p-main {
+    display: block;
+    /*animation-name: leftin ;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    text-shadow: 0 3px 4px hsla(0, 0%, 0%, 0.815);
+
+ 
+
+   
+
+}
+.m1 {
+    letter-spacing: 5px;
+    font-size: 70px
+ 
+}
+.m2 {
+    letter-spacing: 40px;
+    font-size: 90px;
+}
+*/
+.heading-p-sub {
+    display: block;
+    font-size: 40px;
+    letter-spacing: 19px;
+    /*animation-name: rightin ;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;*/
+    text-shadow: 0 3px 4px hsla(0, 0%, 0%, 0.815);
+
+
+
+    
+
+}
+/*
+@keyframes leftin {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes rightin {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}/*
+@keyframes popdown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    80% {
+        transform: translateY(10px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}*/
+
+.navlink:link,
+.navlink:visited{
+    text-decoration: none;
+    color: black;
+    transition: all 0.2s;
+}
+
+.navlink:hover{
+    color: whitesmoke;
+}
+
+.nanlink:active {
+    color: whitesmoke;
+    transform: translateY(0.5px);
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: rgb(255, 29, 29);
+    box-shadow: 0 15px 20px hsla(0, 0%, 0%, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px hsla(0, 0%, 0%, 0.2);
+}
+
+
+.whitebtn {
+    margin-top: 10%;
+    background-color: rgb(255, 114, 32);
+    color: whitesmoke;
+    font-size: 25px;
+    font-weight: bold; 
+    box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.2);
+}  
+
+.specialities-head {
+    margin-top: 60px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.specialities-sub {
+    margin-left: 50px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.473);
+    text-transform: uppercase;
+}
+
+.recommendations-head {
+    margin-top: 60px;
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+
+}
+
+.recommendations-sub {
+    margin-left: 50px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.473);
+    text-transform: uppercase;
+    letter-spacing: 44px;
+}
+
+.reviews-head {
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    color: black;
+}
+
+
+
+.specialities-box {
+    width: 100%;
+    height: 1100px;
+    background-image:linear-gradient(to bottom, rgba(253, 222, 193, 0.486), rgba(255, 217, 0, 0.185));
+    position: relative;
+}
+
+.recommendations-box {
+    width: 100%;
+    height: 1900px;
+    background-image:linear-gradient(to bottom, rgba(255, 217, 0, 0.185), rgba(253, 222, 193, 0.486));
+    position: relative;
+}
+
+.reviews-box {
+    width: 100%;
+    height: 1400px;
+    background-image:linear-gradient(to bottom, rgba(253, 222, 193, 0.486), rgba(255, 217, 0, 0.185));
+
+}
+
+.footer-box {
+    width: 100%;
+    height: 1420px;
+    background-image:linear-gradient(to bottom, rgba(255, 217, 0, 0.185), rgba(253, 222, 193, 0.486));
+
+}
+
+.special-dishes {
+    margin-top: 20px;
+    width: 85%;
+    height: 900px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../Images/Specialities-cover.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    transform: translate(-50%, 0);
+    position: absolute;
+    left: 50%;
+    border-radius: 10px;
+
+}
+
+.srecipe-box {
+
+    float: left;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 23px;
+    width: 30%;
+    height: 400px;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.2);
+    position: relative;
+}
+
+.srecipe-box:hover {
+    background-color: whitesmoke;
+    opacity: 1;
+}
+
+.sf{
+    height: 200px;
+    position: absolute;
+    top: 30px;
+    transform: translate(-50%, 0);
+    left: 50%;
+
+}
+
+.vnlogo {
+    height: 30px;
+    position: absolute;
+    top: 250px;
+    right: 30px;
+}
+
+.srname {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position:absolute;
+    top: 250px;
+    left: 30px;
+}
+
+.srname2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    position:absolute;
+    top: 290px;
+    left: 30px;
+}
+
+.discount {
+    height: 80px;
+    position: absolute;
+    top: 270px;
+    right: 60px;
+}
+
+.discountname {
+    text-align: center;
+    font-size: 15px;
+    position: absolute;
+    top: 290px;
+    right: 75px;
+    font-weight: bold;
+}
+
+.price {
+    font-size: 23px;
+    position: absolute;
+    top: 360px;
+    right: 80px;
+}
+
+
+.add {
+        background-color: orangered;
+        border: none;
+        color: whitesmoke;
+        padding: 10px 30px;
+        text-align: center;
+        display: inline-block;
+        font-size: 26px;
+        cursor: pointer;
+        position: absolute;
+        top: 330px;
+        left: 30px;
+        border-radius: 10px;
+}
+
+.add::before {
+    content: "Add +";
+}       
+            
+.add:hover {
+    transform: translateY(-3px);
+    background-color: rgb(255, 38, 0)
+}  
+     
+.add:focus {
+    background-color: green;
+}
+.add:focus::before {
+    content: "Added";
+}
+
+.f {
+    position: absolute;
+    height: 230px;
+    top: 85px;
+    left: 30px;
+}
+
+.vnlogo2 {
+    position: absolute;
+    height: 30px;
+    top: 130px;
+    left: 200px;
+}
+
+.dishname {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position:absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.dishname2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    position:absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.price2 {
+    font-size: 28px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+.add2 {
+    background-color: orangered;
+    border: none;
+    color: whitesmoke;
+    padding: 10px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    bottom: 80px;
+    right: 30px;
+    border-radius: 5px;
+}
+
+.add2::before {
+content: "Add +";
+}       
+        
+.add2:hover {
+transform: translateY(-3px);
+background-color: rgb(255, 38, 0)
+
+}  
+ 
+.add2:focus {
+background-color: green;
+}
+.add2:focus::before {
+content: "Added";
+}
+
+.search {
+    position: relative;
+}
+
+.recipe-search {
+    font-size: 20px;
+    position: absolute;
+    transform: translate(-50%, 0);
+    left: 50%;
+    top: 5px;
+    width: 85%;
+    background-color: whitesmoke;
+    background-image: url(../Images/search.png);
+    background-repeat: no-repeat;
+    background-position: 98% 40%;
+    background-size: 30px;  
+    color: black;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: 2px rgb(150, 150, 150) solid;
+    border-radius: 8px;
+    outline: none;
+}
+
+.recom-dishes {
+    width: 85%;
+    height: 1500px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),url(../Images/recommendations-cover.jpg);
+    background-size: cover;
+    margin-top: 30px;
+    transform: translate(-50%, 0);
+    position: absolute;
+    left: 50%;
+    top: 260px;
+    border-radius: 10px;
+    
+}
+
+.reviews-coverpic {
+    height: 250px;
+    width: 30%;
+    margin: 25px;
+    float: left;
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+
+.recipe-box {
+
+    float: left;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 23px;
+    width: 30%;
+    height: 350px;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.2);
+    position: relative;
+}
+
+.recipe-box:hover {
+    background-color: whitesmoke;
+    opacity: 1;
+}
+
+.review-accept {
+    float: left;
+    margin-top: 130px;
+    margin-left: 80px;
+    width: 45%;
+    /*background-color: blue;*/
+}
+
+.review-accept-head1{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+.review-accept-head2{
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 6;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.rbox {
+    width: 80% auto;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.63);
+    border-radius: 40px;
+    box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.2);
+}
+
+.review-input {
+    margin-left: 80px;
+    padding-top: 60px;
+    margin-right: 80px;
+}
+
+.reviewtake {
+    outline: none;
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 2px #ccc solid;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.reviewtake:focus {
+    border: 2px black solid;
+}
+
+.label{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+#submitbtn {
+    font-size: 20px;
+    width: 100%;
+    background-color: orange;
+    color: black;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: 2px #ccc solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#submitbtn:hover {
+    background-color: rgb(255, 136, 0);
+}
+
+#fullname {
+    font-size: 15px;  
+}
+
+#email {
+    font-size: 15px;
+}
+
+#reviewtext {
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+
+}
+
+.review-column {
+    
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+    width: 40%;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.493), rgba(255, 255, 255, 0.493)), url(../Images/reviewpplcover.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.r1 {
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.2);
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+
+
+}
+
+.r2 {
+
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.2);
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+}
+
+.r3 {
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    background-color: whitesmoke;
+    opacity: 0.8;
+    box-shadow: 0 10px 20px hsla(0, 0%, 0%, 0.2);
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+}
+
+.people {
+    margin: 80px 0 0 45px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    
+}
+
+.peoplename {
+    padding-left: 15px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.peoplebox1 {
+    margin: 70px 30px 0 0;
+    padding: 10px;
+    font-size: 5px;
+    float: right;
+    width: 290px;
+    height: 150px;
+}
+
+.peoplebox2 {
+    margin: 70px 30px 0 0;
+    padding: 10px;
+    font-size: 5px;
+    float: right;
+    width: 290px;
+    height: 150px;
+}
+
+.peoplebox3 {
+    margin: 70px 30px 0 0;
+    padding: 10px;
+    font-size: 5px;
+    float: right;
+    width: 290px;
+    height: 150px;
+}
+
+.peopleheader {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 15px;
+}
+
+.rtext {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.lastcoverpic {
+    padding: 0 30px 0 30px;
+    width: 100%;
+    clip-path: polygon(0 20%, 100% 10%, 100% 90%, 0 80%);
+}
+
+
+/*       Footer       */
+
+
+.socialmedia-box {
+
+    margin-top: 30px;
+    width: 100%;
+    background-color: rgba(168, 168, 168, 0.377);
+    height: 400px;
+}
+
+.sm-icons {
+    float: left;
+    position: absolute;
+    right: 9%;
+}
+
+.btn1:link,
+.btn1:visited {
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.btn1:hover {
+    border-bottom: black 3px solid;
+}
+
+.btn1:active {
+    transform: translateY(0.5px);
+    border-bottom: black 3px solid;
+
+}
+
+.sm-text {
+    font-size: 30px;
+    text-align: right;
+    margin-right: 232px;
+    padding-top: 20px;
+    color: black;
+}
+.icon-size {
+    height: 30px;
+    margin: 40px 20px;
+}
+
+.footer-links{
+    width: 85%;
+    height: 50px;
+    margin: 130px auto;
+    border-top: black 2px solid;
+    position: relative;
+}
+
+.table {
+    margin-top: 25px;
+    margin-left: 30px;
+    text-align: left;
+    float: left;
+    
+}
+
+th,
+td {
+    width: 300px;
+    height: 25px;
+    color: black;
+}
+.table-top {
+    color: black;
+    font-size: 20px;
+    line-height: 2.3;    
+}
+
+.btn2:link,
+.btn2:visited {
+    text-decoration: none;
+    color: rgb(83, 83, 83);
+    padding: 0;
+    display: inline-block;
+    transition: all 0.2s;
+
+}
+
+.btn2:hover {
+    color: black;
+}
+
+.btn2:active {
+    color: black;
+    transform: translateY(0.5px);
+}
+
+.btn3:link,
+.btn3:visited {
+    text-decoration: none;
+    color: black;
+    width: 85px;
+    height: 85px;
+    border-radius: 43px;
+    border: rgb(143, 143, 143) 0.1px solid;
+    transition: all 0.2s;
+    position: absolute;
+    right: 0px;
+}
+
+.btn3:hover {
+    color: black;
+    background-color: rgb(128, 128, 128);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 20px hsla(0, 0%, 0%, 0.2);
+}
+
+.btn3:active {
+    color: black;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px hsla(0, 0%, 0%, 0.2);
+}
+
+.upbtn {
+    padding: 20px;
+    text-align: center;
+    margin-top: 48px;
+    background-color: rgb(170, 170, 170);
+    font-size: 15px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px hsla(0, 0%, 0%, 0.2);
+}  
+
+.cr {
+    margin-top: 20px;
+    margin-left: 110px;
+}
+
